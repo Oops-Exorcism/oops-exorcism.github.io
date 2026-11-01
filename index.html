@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oops Exorcism</title>
+  <meta name="description" content="Co-op horror game: exorcise ghosts live on stream. Sign up for playtest access and news.">
+  <meta property="og:title" content="Oops Exorcism">
+  <meta property="og:description" content="Co-op horror. Live exorcism. What could go wrong?">
+  <meta name="theme-color" content="#1e1a16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="logo" aria-label="Oops Exorcism">
+      <span class="logo-oops" aria-hidden="true"><span class="rec-dot"></span>OPS</span>
+      <span class="logo-exorcism" aria-hidden="true">EXORCISM</span>
+    </h1>
+
+    <p class="tagline">Co-op horror. Live exorcism. What could go wrong?</p>
+
+    <!--
+      Kit form: replace YOUR_FORM_ID with the number from your Kit form
+      (Kit → Grow → Landing Pages & Forms → your form → Publish → HTML,
+      look for app.kit.com/forms/<number>/subscriptions).
+    -->
+    <form class="signup" id="signup" method="post"
+          action="https://app.kit.com/forms/YOUR_FORM_ID/subscriptions">
+      <label class="visually-hidden" for="email">Email</label>
+      <input id="email" name="email_address" type="email" required
+             placeholder="your@email.com" autocomplete="email">
+      <button type="submit">Get playtest access</button>
+    </form>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <p class="fineprint">
+      News and playtest invites only. You'll get a confirmation email first.
+      Unsubscribe anytime. <a href="privacy.html">Privacy</a>
+    </p>
+  </main>
+
+  <footer class="footer">© 2026 Oops Exorcism</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
