@@ -11,12 +11,6 @@
   }
 
   form.addEventListener("submit", function (event) {
-    if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
-      event.preventDefault();
-      show("Signup isn't connected yet. Please check back soon.", true);
-      return;
-    }
-
     event.preventDefault();
     button.disabled = true;
     show("Sending…", false);
